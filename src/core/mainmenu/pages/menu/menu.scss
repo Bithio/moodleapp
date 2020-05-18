@@ -4,6 +4,21 @@ ion-app.app-root page-core-mainmenu {
         overflow: visible;
         text-align: center;
         transition: margin 500ms ease-in-out, transform 300ms ease-in-out;
+        color: $red;
+    }
+    ion-icon.ion-md-home,
+    ion-icon.ion-md-chatbubbles,
+    ion-icon.ion-md-stats,
+    ion-icon.ion-md-folder,
+    ion-icon.ion-md-menu{
+        color: $red;
+    }
+
+    ion-icon.ion-md-calendar,
+    ion-icon.ion-md-notifications,
+    ion-icon.ion-md-fa-newspaper-o,
+    ion-icon.ion-md-pricetags{
+        color: $blue;
     }
 
     .ion-md-fa-graduation-cap,

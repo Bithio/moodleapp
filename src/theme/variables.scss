@@ -28,6 +28,7 @@ $turquoise:       #007982; // Accent.
 $green:           #5e8100; // Accent.
 $red:             #cb3d4d;
 $orange:          #f98012; // Accent (never text).
+$bithio-color:    #009688; 
 $yellow:          #fbad1a; // Accent (never text).
 $purple:          #8e24aa; // Accent (never text).
 
@@ -65,7 +66,7 @@ $core-course-image-background: #81ecec, #74b9ff, #a29bfe, #dfe6e9, #00b894, #098
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
-$toolbar-background: $core-color !default;
+$toolbar-background: $bithio-color !default;
 $content-padding: 10px;
 
 // Named Color Variables
@@ -136,7 +137,7 @@ $subdued-text-color:         $gray-darker !default;
 
 $list-background-color:      $white !default;
 
-$tabs-background:            $gray-darker !default;
+$tabs-background:            #325261 !default;
 $tabs-border-color:          #b2b2b2 !default;
 $tabs-tab-color-active:      $core-color !default;
 $tabs-tab-color-inactive:    $white !default;
@@ -174,12 +175,12 @@ $core-star-color: $core-color !default;
 
 // Init screen.
 $core-color-init-screen:          #ffffff !default;
-$core-init-screen-spinner-color:  $core-color !default;
+$core-init-screen-spinner-color:  $bithio-color !default;
 
 $core-fixed-url:                  false !default;
 
-$core-loading-spinner-color: $core-color !default;
-$core-spinner-color: $core-color !default;
+$core-loading-spinner-color: $bithio-color !default;
+$core-spinner-color: $bithio-color !default;
 $core-button-outline-background-color: $white !default;
 
 $core-network-message-height: 16px !default;
@@ -305,7 +306,7 @@ $item-media-height: 32px !default;
 $core-top-tabs-background: $white !default;
 $core-top-tabs-color: $gray-dark !default;
 $core-top-tabs-border: $gray !default;
-$core-top-tabs-color-active: $core-color !default;
+$core-top-tabs-color-active: $bithio-color !default;
 $core-top-tabs-border-active: $core-top-tabs-color-active !default;
 
 $core-splitview-selected: $core-color-light !default;

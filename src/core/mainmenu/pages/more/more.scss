@@ -1,5 +1,5 @@
 ion-app.app-root page-core-mainmenu-more {
-    $core-more-icon: $gray-darker !default;
+    $core-more-icon: $blue !default;
     $core-more-background-ios: $list-ios-background-color !default;
     $core-more-background-md: $list-md-background-color !default;
     $core-more-activated-background-ios: color-shade($core-more-background-ios) !default;
@@ -44,6 +44,17 @@ ion-app.app-root page-core-mainmenu-more {
             }
         }
     }
+
+    ion-icon.icon.icon-md.ion-md-globe.item-icon,
+        ion-icon.icon.icon-md.ion-md-log-out.item-icon,
+        ion-icon.icon.fa.fa-cogs{
+        color:$blue;
+        }
+
+
+        ion-icon.icon.icon-md.ion-md-log-out.item-icon{
+        color:$red;
+        }
 
 	ion-icon {
 		color: $core-more-icon;

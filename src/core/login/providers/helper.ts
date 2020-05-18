@@ -229,7 +229,7 @@ export class CoreLoginHelperProvider {
     checkLogout(): void {
         const navCtrl = this.appProvider.getRootNavController();
         if (!this.appProvider.isSSOAuthenticationOngoing() && this.sitesProvider.isLoggedIn() &&
-            this.sitesProvider.getCurrentSite().isLoggedOut() && navCtrl.getActive().name == 'CoreLoginReconnectPage') {
+            this.sitesProvider.getCurrentSite().isLoggedOut() && navCtrl.getActive().name == 'CoreLoginCredentialsPage') {
             // User must reauthenticate but he closed the InAppBrowser without doing so, logout him.
             this.sitesProvider.logout();
         }
@@ -1137,11 +1137,11 @@ export class CoreLoginHelperProvider {
                         activePage = rootNavCtrl.getActive();
 
                     // If current page is already reconnect, stop.
-                    if (activePage && activePage.component && activePage.component.name == 'CoreLoginReconnectPage') {
+                    if (activePage && activePage.component && activePage.component.name == 'CoreLoginCredentialsPage') {
                         return;
                     }
 
-                    rootNavCtrl.setRoot('CoreLoginReconnectPage', {
+                    rootNavCtrl.setRoot('CoreLoginCredentialsPage', {
                         infoSiteUrl: info.siteurl,
                         siteUrl: result.siteUrl,
                         siteId: siteId,

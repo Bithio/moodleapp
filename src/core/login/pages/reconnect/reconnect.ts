@@ -71,6 +71,7 @@ export class CoreLoginReconnectPage {
 
         this.isLoggedOut = currentSite && currentSite.isLoggedOut();
         this.credForm = fb.group({
+         username: [navParams.get('username') || '', Validators.required],
             password: ['', Validators.required]
         });
     }
@@ -90,7 +91,6 @@ export class CoreLoginReconnectPage {
                 avatar: site.infos.userpictureurl
             };
 
-            this.username = site.infos.username;
             this.siteUrl = site.infos.siteurl;
             this.siteName = site.getSiteName();
 
@@ -160,9 +160,14 @@ export class CoreLoginReconnectPage {
 
         // Get input data.
         const siteUrl = this.siteUrl,
-            username = this.username,
+            username = this.credForm.value.username,
             password = this.credForm.value.password;
 
+        if (!username) {
+            this.domUtils.showErrorModal('core.login.usernamerequired', true);
+
+            return;
+        }
         if (!password) {
             this.domUtils.showErrorModal('core.login.passwordrequired', true);
 

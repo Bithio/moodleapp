@@ -20,16 +20,16 @@
             </ng-container>
 
             <!-- If no sitename show big siteurl. -->
-            <p *ngIf="!siteName" class="item-heading core-siteurl">{{siteUrl}}</p>
+            <!-- <p *ngIf="!siteName" class="item-heading core-siteurl">{{siteUrl}}</p> -->
             <!-- If sitename, show big sitename and small siteurl. -->
-            <p *ngIf="siteName" class="item-heading core-sitename"><core-format-text [text]="siteName" [filter]="false"></core-format-text></p>
-            <p *ngIf="siteName" class="core-siteurl">{{siteUrl}}</p>
+            <!-- <p *ngIf="siteName" class="item-heading core-sitename"><core-format-text [text]="siteName" [filter]="false"></core-format-text></p> -->
+            <!-- <p *ngIf="siteName" class="core-siteurl">{{siteUrl}}</p> -->
 
             <p *ngIf="!isLoggedOut">
                 <ion-icon padding name="alert"></ion-icon> {{ 'core.login.reconnectdescription' | translate }}
             </p>
         </div>
-        <form ion-list *ngIf="!isOAuth" [formGroup]="credForm" (ngSubmit)="login($event)" class="core-login-form" #reconnectForm>
+       <!--  <form ion-list *ngIf="!isOAuth" [formGroup]="credForm" (ngSubmit)="login($event)" class="core-login-form" #reconnectForm>
             <ion-item text-wrap class="core-username">
                 <p>{{username}}</p>
             </ion-item>
@@ -42,13 +42,25 @@
                 <ion-row>
                     <ion-col>
                         <a ion-button block color="light" (click)="cancel($event)">{{ 'core.login.cancel' | translate }}</a>
-                    </ion-col>
+                    </ion-col> 
                     <ion-col>
                         <button ion-button block [disabled]="!credForm.valid">{{ 'core.login.loginbutton' | translate }}</button>
                     </ion-col>
                 </ion-row>
             </ion-grid>
-        </form>
+        </form> -->
+
+        <form ion-list *ngIf="!isOAuth" [formGroup]="credForm" (ngSubmit)="login($event)" class="core-login-form" #reconnectForm>
+                <ion-item margin-bottom>
+                    <ion-input type="text" name="username" placeholder="{{ 'core.login.username' | translate }}" formControlName="username" autocapitalize="none" autocorrect="off"></ion-input>
+                </ion-item>
+                <ion-item margin-bottom>
+                    <core-show-password item-content [name]="'password'">
+                        <ion-input class="core-ioninput-password" name="password" type="password" placeholder="{{ 'core.login.password' | translate }}" formControlName="password" core-show-password [clearOnEdit]="false"></ion-input>
+                    </core-show-password>
+                </ion-item>
+                <button ion-button block [disabled]="siteChecked && !isBrowserSSO && !credForm.valid" class="button1">{{ 'core.login.loginbutton' | translate }}</button>
+            </form>
 
         <!-- Forgotten password button. -->
         <div *ngIf="showForgottenPassword && !isOAuth" padding-top class="core-login-forgotten-password">
