@@ -28,6 +28,7 @@ export class CoreLoginSiteHelpPage {
 
     urlImageHtml: string;
     setupLinkHtml: string;
+    setupbithioHtml: string;
 
     constructor(protected viewCtrl: ViewController,
             protected translate: TranslateService) {
@@ -35,6 +36,9 @@ export class CoreLoginSiteHelpPage {
         this.urlImageHtml = '<img src="assets/img/login/faq_url.png" role="presentation">';
         this.setupLinkHtml = '<a href="https://moodle.com/getstarted/" title="' +
                 this.translate.instant('core.login.faqsetupsitelinktitle') + '">https://moodle.com/getstarted/</a>';
+
+        this.setupbithioHtml = '<a href="https://www.bithio.com/" title="' +
+                this.translate.instant('core.login.faqsetupbithiositelink') + '">Bithio Learning</a>';
     }
 
     /**

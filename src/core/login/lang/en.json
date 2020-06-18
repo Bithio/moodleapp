@@ -35,6 +35,15 @@
     "faqtestappquestion": "I just want to test the app, what can I do?",
     "faqwhatisurlanswer": "<p>Every organisation or school has their own custom address for their Moodle site.</p><p>To find the address of the Moodle site you want to connect to, do the following:</p><ol><li>Open a web browser and go to your school's or organisation's Moodle site login page</li><li>At the top of the page, on the address bar, you will see the URL of your Moodle site. E.g. \"campus.example.edu\".{{$image}}</li><li>Copy the address (do not copy the /login and what comes after), paste it into the Moodle App and click \"Connect!\"</li><li>Now you can log into your site, using your username and password</li>",
     "faqwhatisurlquestion": "What is the URL of my Moodle site? How can I find my school’s site?",
+
+    "faqhowtotestanswer": "For testing purpose, we have created a user with limited accesses/activities in our system. Please use bithiotest/Bithiotest1 to authenticate. This user is automatically enrolled to a default course which introduces the Bithio Learning features, and how to use the platform.",
+    "faqhowtotestquestion":"How can I test Bithio Learning app?",
+    "faqhowtouseanswer": "Bithio Learning app provides an easy connection to the {{$link}} platform and helps students to access courses on the go, even when they are offline. The app takes your classrooms to your pocket.",
+    "faqhowtousequestion": "What is Bithio Learning app?",
+    "faqhowtogivefeedbackquestion": "How can I register for a course?",
+    "faqhowtogivefeedbackanswer": "We strive to provide the best user experience at all times. Please reach out at info@bithio.com for further engagements or feedbacks if you have any.",
+    "faqsetupbithiositelink": "Bithio Learning",
+
     "findyoursite": "Find your site",
     "firsttime": "Is this your first time here?",
     "forcepasswordchangenotice": "You must change your password to proceed.",

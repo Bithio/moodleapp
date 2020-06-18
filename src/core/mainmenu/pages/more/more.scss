@@ -46,13 +46,12 @@ ion-app.app-root page-core-mainmenu-more {
     }
 
     ion-icon.icon.icon-md.ion-md-globe.item-icon,
-        ion-icon.icon.icon-md.ion-md-log-out.item-icon,
-        ion-icon.icon.fa.fa-cogs{
+        ion-icon.icon.icon-md.ion-md-log-out.item-icon{
         color:$blue;
         }
 
 
-        ion-icon.icon.icon-md.ion-md-log-out.item-icon{
+        ion-icon.icon.fa.fa-cog{
         color:$red;
         }
 
