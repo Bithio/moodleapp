@@ -95,9 +95,6 @@ import { CoreSitePluginsAssignFeedbackComponent } from '@core/siteplugins/compon
 import { CoreSitePluginsAssignSubmissionComponent } from '@core/siteplugins/components/assign-submission/assign-submission';
 
 // Import addon providers. Do not import database module because it causes circular dependencies.
-import { ADDON_BADGES_PROVIDERS } from '@addon/badges/badges.module';
-import { ADDON_CALENDAR_PROVIDERS } from '@addon/calendar/calendar.module';
-import { ADDON_COMPETENCY_PROVIDERS } from '@addon/competency/competency.module';
 import { ADDON_FILES_PROVIDERS } from '@addon/files/files.module';
 import { ADDON_MESSAGEOUTPUT_PROVIDERS } from '@addon/messageoutput/messageoutput.module';
 import { ADDON_MESSAGES_PROVIDERS } from '@addon/messages/messages.module';
@@ -107,9 +104,6 @@ import { ADDON_MOD_CHAT_PROVIDERS } from '@addon/mod/chat/chat.module';
 import { ADDON_MOD_CHOICE_PROVIDERS } from '@addon/mod/choice/choice.module';
 import { ADDON_MOD_FEEDBACK_PROVIDERS } from '@addon/mod/feedback/feedback.module';
 import { ADDON_MOD_FOLDER_PROVIDERS } from '@addon/mod/folder/folder.module';
-import { ADDON_MOD_FORUM_PROVIDERS } from '@addon/mod/forum/forum.module';
-import { ADDON_MOD_GLOSSARY_PROVIDERS } from '@addon/mod/glossary/glossary.module';
-import { ADDON_MOD_IMSCP_PROVIDERS } from '@addon/mod/imscp/imscp.module';
 import { ADDON_MOD_LESSON_PROVIDERS } from '@addon/mod/lesson/lesson.module';
 import { ADDON_MOD_LTI_PROVIDERS } from '@addon/mod/lti/lti.module';
 import { ADDON_MOD_PAGE_PROVIDERS } from '@addon/mod/page/page.module';
@@ -231,11 +225,9 @@ export class CoreCompileProvider {
                 .concat(CORE_LOGIN_PROVIDERS).concat(CORE_MAINMENU_PROVIDERS).concat(CORE_SHAREDFILES_PROVIDERS)
                 .concat(CORE_SITEHOME_PROVIDERS).concat([CoreSitePluginsProvider]).concat(CORE_USER_PROVIDERS)
                 .concat(CORE_QUESTION_PROVIDERS).concat(IONIC_NATIVE_PROVIDERS).concat(this.OTHER_PROVIDERS).concat(extraProviders)
-                .concat(ADDON_BADGES_PROVIDERS).concat(ADDON_CALENDAR_PROVIDERS).concat(ADDON_COMPETENCY_PROVIDERS)
                 .concat(ADDON_FILES_PROVIDERS).concat(ADDON_MESSAGEOUTPUT_PROVIDERS).concat(ADDON_MESSAGES_PROVIDERS)
                 .concat(ADDON_MOD_ASSIGN_PROVIDERS).concat(ADDON_MOD_BOOK_PROVIDERS).concat(ADDON_MOD_CHAT_PROVIDERS)
                 .concat(ADDON_MOD_CHOICE_PROVIDERS).concat(ADDON_MOD_FEEDBACK_PROVIDERS).concat(ADDON_MOD_FOLDER_PROVIDERS)
-                .concat(ADDON_MOD_FORUM_PROVIDERS).concat(ADDON_MOD_GLOSSARY_PROVIDERS).concat(ADDON_MOD_IMSCP_PROVIDERS)
                 .concat(ADDON_MOD_LESSON_PROVIDERS).concat(ADDON_MOD_LTI_PROVIDERS).concat(ADDON_MOD_PAGE_PROVIDERS)
                 .concat(ADDON_MOD_QUIZ_PROVIDERS).concat(ADDON_MOD_RESOURCE_PROVIDERS).concat(ADDON_MOD_SCORM_PROVIDERS)
                 .concat(ADDON_MOD_SURVEY_PROVIDERS).concat(ADDON_MOD_URL_PROVIDERS).concat(ADDON_MOD_WIKI_PROVIDERS)

@@ -22,7 +22,6 @@ import { CoreCourseHelperProvider } from '@core/course/providers/helper';
 import { CoreCourseModuleMainComponent, CoreCourseModuleDelegate } from '@core/course/providers/module-delegate';
 import { CoreCourseSectionPage } from '@core/course/pages/section/section.ts';
 import { CoreContentLinksHelperProvider } from '@core/contentlinks/providers/helper';
-import { AddonBlogProvider } from '@addon/blog/providers/blog';
 import { CoreConstants } from '@core/constants';
 
 /**
@@ -36,7 +35,6 @@ export class CoreCourseModuleMainResourceComponent implements OnInit, OnDestroy,
     loaded: boolean; // If the component has been loaded.
     component: string; // Component name.
     componentId: number; // Component ID.
-    blog: boolean; // If blog is avalaible.
 
     // Data for context menu.
     externalUrl: string; // External URL to open in browser.
@@ -62,7 +60,6 @@ export class CoreCourseModuleMainResourceComponent implements OnInit, OnDestroy,
     protected courseSectionPage: CoreCourseSectionPage;
     protected linkHelper: CoreContentLinksHelperProvider;
     protected navCtrl: NavController;
-    protected blogProvider: AddonBlogProvider;
 
     protected logger;
 
@@ -75,7 +72,6 @@ export class CoreCourseModuleMainResourceComponent implements OnInit, OnDestroy,
         this.courseSectionPage = injector.get(CoreCourseSectionPage, null);
         this.linkHelper = injector.get(CoreContentLinksHelperProvider);
         this.navCtrl = injector.get(NavController, null);
-        this.blogProvider = injector.get(AddonBlogProvider, null);
         this.dataRetrieved = new EventEmitter();
 
         const loggerProvider = injector.get(CoreLoggerProvider);
@@ -91,9 +87,6 @@ export class CoreCourseModuleMainResourceComponent implements OnInit, OnDestroy,
         this.externalUrl = this.module.url;
         this.loaded = false;
         this.refreshIcon = 'spinner';
-        this.blogProvider.isPluginEnabled().then((enabled) => {
-            this.blog = enabled;
-        });
     }
 
     /**
@@ -239,16 +232,7 @@ export class CoreCourseModuleMainResourceComponent implements OnInit, OnDestroy,
         this.textUtils.expandText(this.translate.instant('core.description'), this.description, this.component, this.module.id,
                 [], true, 'module', this.module.id, this.courseId);
     }
-
-    /**
-     * Go to blog posts.
-     *
-     * @param event Event.
-     */
-    gotoBlog(event: any): void {
-        this.linkHelper.goInSite(this.navCtrl, 'AddonBlogEntriesPage', { cmId: this.module.id });
-    }
-
+   
     /**
      * Prefetch the module.
      *
