@@ -1527,8 +1527,10 @@ export class CoreUtilsProvider {
      * @return Whether the app can scan QR codes.
      */
     canScanQR(): boolean {
-        return CoreApp.isMobile();
+        return false;
+        //return CoreApp.isMobile();
     }
+    
 
     /**
      * Open a modal to scan a QR code.
