@@ -85,7 +85,7 @@
 
     @if ($core-login-button-outline) {
         form ion-button {
-            --background: white;
+            --background: #{$bithio-blue};
             --color: var(--core-login-background);
         }
     }
