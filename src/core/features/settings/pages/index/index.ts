@@ -79,11 +79,11 @@ export class CoreSettingsIndexPage implements AfterViewInit, OnDestroy {
             });
         }
 
-        sections.push({
+        sections.push(/*{
             name: 'core.settings.about',
             path: 'about',
             icon: 'fas-id-card',
-        });
+        }*/);
 
         return sections;
     }
