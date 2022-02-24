@@ -23,7 +23,7 @@ import { CoreNavigator } from '@services/navigator';
  */
 @Component({
     selector: 'page-core-app-settings-about',
-    templateUrl: 'about.html',
+    //templateUrl: 'about.html',
 })
 export class CoreSettingsAboutPage {
 
