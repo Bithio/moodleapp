@@ -32,7 +32,8 @@ export class AddonBlogMainMenuHandlerService implements CoreMainMenuHandler {
      * @inheritdoc
      */
     async isEnabled(): Promise<boolean> {
-        return AddonBlog.isPluginEnabled();
+       return false;
+       // return AddonBlog.isPluginEnabled();
     }
 
     /**
