@@ -1,8 +1,8 @@
 {
-    "app_id": "com.moodle.moodlemobile",
+    "app_id": "com.bithio.bithioapp",
     "appname": "Bithio",
     "versioncode": 3950,
-    "versionname": "1.0.1",
+    "versionname": "1.0.0",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
@@ -63,18 +63,7 @@
     },
     "wsservice": "moodle_mobile_app",
     "wsextservice": "local_mobile",
-    "demo_sites": {
-        "student": {
-            "url": "https:\/\/school.moodledemo.net",
-            "username": "student",
-            "password": "moodle"
-        },
-        "teacher": {
-            "url": "https:\/\/school.moodledemo.net",
-            "username": "teacher",
-            "password": "moodle"
-        }
-    },
+    "demo_sites": "",
     "zoomlevels": {
         "normal": 100,
         "low": 110,
@@ -82,7 +71,7 @@
     },
     "customurlscheme": "moodlemobile",
     "siteurl": "https:\/\/www.bithio.com",
-    "sitename": "",
+    "sitename": "Memhr Net",
     "multisitesdisplay": "",
     "sitefindersettings": {},
     "onlyallowlistedsites": false,
@@ -96,7 +85,7 @@
     "forceLoginLogo": false,
     "ioswebviewscheme": "moodleappfs",
     "appstores": {
-        "android": "com.moodle.moodlemobile",
+        "android": "com.bithio.bithioapp",
         "ios": "id633359593"
     }
 }
