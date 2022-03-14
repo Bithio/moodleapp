@@ -46,6 +46,18 @@
         }
     }
 
+    ion-tab-button.core-home-handler,
+    ion-tab-button.addon-messages-handler,
+    ion-tab-button.core-grades-coursesgrades-handler{
+        color: $blue;
+    }
+
+    ion-tab-button.addon-calendar-handler,
+    ion-tab-button.addon-notifications-handler,
+    ion-tab-button.addon-privatefiles-handler{
+        color: $red;
+    }
+
     ion-tabs.placement-side {
         flex-direction: row;
         ion-tab-bar {

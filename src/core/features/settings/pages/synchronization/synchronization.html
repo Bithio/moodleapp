@@ -36,7 +36,7 @@
                     <core-format-text [text]="site.siteName" clean="true" [siteId]="site.id"></core-format-text>
                 </p>
                 <p>{{ site.fullName }}</p>
-                <p>{{ site.siteUrl }}</p>
+                <!-- <p>{{ site.siteUrl }}</p> -->
             </ion-label>
             <core-button-with-spinner [loading]="isSynchronizing(site.id)" slot="end">
                 <ion-button fill="clear"  (click)="synchronize(site.id)"

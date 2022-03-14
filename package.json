@@ -1,10 +1,10 @@
 {
-  "name": "moodlemobile",
-  "version": "3.9.5",
-  "description": "The official app for Moodle.",
+  "name": "bithioapp",
+  "version": "1.0.0",
+  "description": "The official app for Bithio.",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "Bithio Pty Ltd.",
+    "email": "info@bithio.com"
   },
   "repository": {
     "type": "git",
