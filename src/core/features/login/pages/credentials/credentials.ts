@@ -69,7 +69,7 @@ export class CoreLoginCredentialsPage implements OnInit, OnDestroy {
      * Initialize the component.
      */
     ngOnInit(): void {
-        const siteUrl = CoreNavigator.getRouteParam<string>('siteUrl');
+        const siteUrl = CoreConstants.CONFIG.siteurl;//CoreLoginHelper.getFixedSites();
         if (!siteUrl) {
             CoreDomUtils.showErrorModal('Site URL not supplied.');
             CoreNavigator.back();
