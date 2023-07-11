@@ -17,8 +17,8 @@ export class CoreConfigConstants {
     static app_id = 'com.bithio.bithioapp';
     static appname = 'Bithio Mobile';
     static desktopappname = 'Bithio Desktop';
-    static versioncode = 3820;
-    static versionname = '1.0.0';
+    static versioncode = 102;
+    static versionname = '1.0.2';
     static cache_update_frequency_usually = 420000;
     static cache_update_frequency_often = 1200000;
     static cache_update_frequency_sometimes = 3600000;
@@ -86,7 +86,7 @@ export class CoreConfigConstants {
     static multisitesdisplay = '';
     static skipssoconfirmation = false;
     static forcedefaultlanguage = false;
-    // static privacypolicy = 'https://moodle.net/moodle-app-privacy/';
+     static privacypolicy = 'https://www.bithio.com/admin/tool/policy/view.php?policyid=2';
     static notificoncolor = '#f98012';
     static statusbarbg = false;
     static statusbarlighttext = false;

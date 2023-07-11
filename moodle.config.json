@@ -78,7 +78,7 @@
     "onlyallowlistedsites": false,
     "skipssoconfirmation": false,
     "forcedefaultlanguage": false,
-    "privacypolicy": "https:\/\/www.bithio.com",
+    "privacypolicy": "https://www.bithio.com/admin/tool/policy/view.php?policyid=2",
     "notificoncolor": "#f98012",
     "enableanalytics": false,
     "enableonboarding": true,
